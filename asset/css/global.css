@@ -1,1 +1,76 @@
 @import url("./reset.css");
+@import url("../font/minecraft/font.css");
+
+:root {
+    --font-regular: "Minecraft Seven";
+    --font-bold: "Minecraft Bold";
+    --font-head: "Minecraft Ten";
+}
+
+body {
+    font-size: 18px;
+    font-family: var(--font-regular);
+    background-color: #000;
+}
+
+.bold {
+    font-family: var(--font-bold);
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: var(--font-head);
+}
+
+h2 {
+    font-size: 1.64rem;
+    font-family: var(--font-bold);
+    padding: 0 0.32rem;
+}
+
+p {
+    line-height: 1.3;
+    padding: 0 0.32rem;
+}
+
+a {
+    color: #5050ff;
+    text-decoration: underline;
+}
+
+.bg {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bureauc.png");
+    background-size: cover;
+    image-rendering: pixelated;
+    filter: brightness(0.24);
+    z-index: -1;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: #000000bb;
+    backdrop-filter: blur(64px);
+    color: #fff;
+    width: 640px;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.64rem;
+}
